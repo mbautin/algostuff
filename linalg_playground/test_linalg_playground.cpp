@@ -19,5 +19,20 @@ int main(int argc, char** argv) {
   assert(RationalNumber(1, 1) == 1);
   assert(RationalNumber(50, 10) == 5);
   assert(5 == RationalNumber(50, 10));
+
+  // Matrix tests.
+  Matrix m(3, 4);
+  m.set_element_at(0, 0, 5);
+  assert(m.element_at(0, 0) == 5);
+
+  m.set_element_at(2, 1, 6);
+  assert(m.element_at(2, 1) == 6);
+
+  m.set_element_at(2, 2, RationalNumber(2, 3));
+  assert(m.element_at(2, 2) == RationalNumber(2, 3));
+
+  cout << "Test matrix:" << endl;
+  cout << m;
+
   cout << "All tests succeeded" << endl;
 }

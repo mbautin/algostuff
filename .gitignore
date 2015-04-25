@@ -8,3 +8,4 @@ cmake_install.cmake
 *.a
 *.so
 /linalg_playground/test_linalg_playground
+core
