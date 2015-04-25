@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 2.8.12)
+project(LINALG_PLAYGROUND)
+
+add_library(linalg_playground linalg_playground.cpp)
+target_compile_features(linalg_playground PUBLIC cxx_delegating_constructors)
+
+add_executable(test_linalg_playground test_linalg_playground.cpp)
+target_link_libraries(test_linalg_playground linalg_playground)
