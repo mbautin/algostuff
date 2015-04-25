@@ -115,7 +115,7 @@ public:
 
   RationalNumber& operator[](int j) {
     assert(0 <= j && j < size);
-    backing_array[j * step];
+    return backing_array[j * step];
   };
 
 private:
